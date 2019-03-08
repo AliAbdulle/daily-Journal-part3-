@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 1px;
+}
+#covered{
+    width: 250px;
+}
+#journal{
+    width: 250px;
+    height: 140px;
+    
+}
+#record-entry{
+   background-color: lightseagreen;
+   border: 2px solid black;
+}
