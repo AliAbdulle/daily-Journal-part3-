@@ -1,11 +1,11 @@
-let journalEntries = 
-    {
-    date: "07/24/2018",
-    covered: "Array methods",
-    journal: "We learned about array methods, but only forEach made sense",
-    mood: "Ok"
-};
+// let journalEntries = 
+//     {
+//     date: "07/24/2018",
+//     covered: "Array methods",
+//     journal: "We learned about array methods, but only forEach made sense",
 
+//     mood: "Ok"
+// };
 
 
 /*
@@ -16,7 +16,7 @@ Arguments: journalEntry (object)
 */
 const enterJournal = document.querySelectorAll(".enterylog")
 
-const makeJournalEntryComponent = (date, covered, journal,mood) =>{
+const makeJournalEntryComponent = (date, covered, journal, mood) => {
     // Create your own HTML structure for a journal entry
     return `<div>
     <h2>${date}</h2>
@@ -26,19 +26,10 @@ const makeJournalEntryComponent = (date, covered, journal,mood) =>{
     
     </div> `
 }
-makeJournalEntryComponent(journalEntries) 
+makeJournalEntryComponent(journalEntries)
 
-const renderJournalEntries = (date, covered, journal,mood) => {
-    journalEntries = {};
-    journalEntries.date = date;
-    journalEntries.covered = covered;
-    journalEntries.journal = journal;
-    journalEntries.mood = mood;
-    return journalEntries
-    
-}
+fetch("http://localhost:3000/entries")
+    .then(Response => Response.json)
+    .then(parsedResponse => {
 
-
-
-// Invoke the render function
-renderJournalEntries(journalEntries)
+    })
