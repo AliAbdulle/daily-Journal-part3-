@@ -14,22 +14,24 @@ represents a single journal entry object as HTML
 
 Arguments: journalEntry (object)
 */
-const enterJournal = document.querySelectorAll(".enterylog")
+const enterJournal = document.querySelector(".enterylog")
 
-const makeJournalEntryComponent = (date, covered, journal, mood) => {
+const makeJournalEntryComponent = (journalEntery) => {
     // Create your own HTML structure for a journal entry
     return `<div>
-    <h2>${date}</h2>
-    <h3>${covered}</h3>
-    <p>${journal}</p>
-    <h4>${mood}</h4>
+    <h2>${journalEntery.date}</h2>
+    <h3>${journalEntery.covered}</h3>
+    <p>${journalEntery.journal}</p>
+    <h4>${journalEntery.mood}</h4>
     
     </div> `
 }
-makeJournalEntryComponent(journalEntries)
 
 fetch("http://localhost:3000/entries")
-    .then(Response => Response.json)
+    .then(response => response.json())
     .then(parsedResponse => {
-
+        for (let currentElemet of parsedResponse) {
+            enterJournal.innerHTML += makeJournalEntryComponent(currentElemet)
+        }
+        console.log(parsedResponse)
     })
