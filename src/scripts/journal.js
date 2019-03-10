@@ -16,13 +16,13 @@ Arguments: journalEntry (object)
 */
 const enterJournal = document.querySelector(".enterylog")
 
-const makeJournalEntryComponent = (journalEntery) => {
+const makeJournalEntryComponent = (journalEnteries) => {
     // Create your own HTML structure for a journal entry
     return `<div>
-    <h2>${journalEntery.date}</h2>
-    <h3>${journalEntery.covered}</h3>
-    <p>${journalEntery.journal}</p>
-    <h4>${journalEntery.mood}</h4>
+    <h2>${journalEnteries.journalData}</h2>
+    <h3>${journalEnteries.covered}</h3>
+    <p>${journalEnteries.journalEntery}</p>
+    <h4>${journalEnteries.mod}</h4>
     
     </div> `
 }
@@ -30,8 +30,8 @@ const makeJournalEntryComponent = (journalEntery) => {
 fetch("http://localhost:3000/entries")
     .then(response => response.json())
     .then(parsedResponse => {
-        for (let currentElemet of parsedResponse) {
-            enterJournal.innerHTML += makeJournalEntryComponent(currentElemet)
+        for (let element of parsedResponse) {
+            enterJournal.innerHTML += makeJournalEntryComponent(element)
         }
         console.log(parsedResponse)
     })
