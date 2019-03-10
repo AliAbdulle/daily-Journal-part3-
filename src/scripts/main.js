@@ -4,7 +4,7 @@ let journalEntries =
     covered: "Array methods",
     journal: "We learned about array methods, but only forEach made sense",
     mood: "Ok"
-};
+}
 
 
 
@@ -38,7 +38,7 @@ const renderJournalEntries = (date, covered, journal,mood) => {
     
 }
 
-
+console.table(journalEntries)
 
 // Invoke the render function
 renderJournalEntries(journalEntries)
