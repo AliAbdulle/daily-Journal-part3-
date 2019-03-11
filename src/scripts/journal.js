@@ -1,11 +1,16 @@
-const journalEntery = document.querySelector(".enterylog")
+const journalEnteries = document.querySelector(".enterylog")
 
-const makeJournalEntryComponent = (journalEnteries) => {
+const makeJournalEntryComponent = (journalEntery) => {
+
+    const covered = document.querySelector("#covered").value;
+    const journal = document.querySelector("#journal").value;
+    const journalData = document.querySelector("#journalData").value;
+    
     // Create your own HTML structure for a journal entry
-    return `
-    <h3>${journalEnteries.covered}</h3>
-    <p>${journalEnteries.journalEntery}</p>
-    <h2>${journalEnteries.journalData}</h2>
+    journalEntery.innerHTML += `
+    <h3>${covered}</h3>
+    <p>${journal}</p>
+    <h2>${journalData}</h2>
     
      `
 }
@@ -14,7 +19,8 @@ fetch("http://localhost:3000/entries")
     .then(response => response.json())
     .then(parsedResponse => {
         for(let currentEl of parsedResponse) {
-            journalEntery.innerHTML += makeJournalEntryComponent(currentEl)
+            //console.log(parsedResponse)
+    journalEntery.innerHTML += makeJournalEntryComponent(currentEl)
         }
         console.log(parsedResponse)
     })
