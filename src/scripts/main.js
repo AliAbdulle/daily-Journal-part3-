@@ -1,4 +1,4 @@
-let journalEntries = 
+let journalEntries =
     {
     date: "07/24/2018",
     covered: "Array methods",
@@ -23,10 +23,10 @@ const makeJournalEntryComponent = (date, covered, journal,mood) =>{
     <h3>${covered}</h3>
     <p>${journal}</p>
     <h4>${mood}</h4>
-    
+
     </div> `
 }
-makeJournalEntryComponent(journalEntries) 
+makeJournalEntryComponent(journalEntries)
 
 const renderJournalEntries = (date, covered, journal,mood) => {
     journalEntries = {};
@@ -35,7 +35,7 @@ const renderJournalEntries = (date, covered, journal,mood) => {
     journalEntries.journal = journal;
     journalEntries.mood = mood;
     return journalEntries
-    
+
 }
 
 console.table(journalEntries)

@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "date": "02/27/2019",
+      "concept": "javaScript array ",
+      "Journal": "I like loop throght all object",
+      "mood": "good",
+      "id": 1
+    },
+    {
+      "date": "07/24/2018",
+      "covered": "Array methods",
+      "journal": "We learned about array methods, but only forEach made sense",
+      "mood": "Ok"
+    },
+    {
+      "date": "2019-03-14",
+      "concept": "linking",
+      "journalEntry": "Making something",
+      "dailyMood": "Okay",
+      "id": 2
+    }
+  ]
+}
