@@ -11,14 +11,15 @@
       "date": "07/24/2018",
       "covered": "Array methods",
       "journal": "We learned about array methods, but only forEach made sense",
-      "mood": "Ok"
+      "mood": "Ok",
+      "id": 2
     },
     {
-      "date": "2019-03-14",
-      "concept": "linking",
-      "journalEntry": "Making something",
-      "dailyMood": "Okay",
-      "id": 2
+      "date": "2019-03-21",
+      "concept": "Learning how to delete objects ",
+      "journalEntry": "It cool thing to do because it easy go back and deleted.",
+      "dailyMood": "Happy",
+      "id": 3
     }
   ]
 }

@@ -16,4 +16,5 @@ body{
 #record-entry{
    background-color: lightseagreen;
    border: 2px solid black;
+   width: 150px
 }
