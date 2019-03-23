@@ -34,6 +34,13 @@
       "journalEntry": "Finished",
       "moodInput": "Happy",
       "id": 5
+    },
+    {
+      "date": "2019-03-22",
+      "concept": "Building DOM ",
+      "journalEntry": "Let see how it would like it.",
+      "moodInput": "Ok",
+      "id": 6
     }
   ]
 }

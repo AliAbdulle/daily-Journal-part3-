@@ -1,7 +1,7 @@
 const recordEntry = document.getElementById("record-entry")
 recordEntry.addEventListener("click", () =>{
     let journalEntries = {
-    date:journalData.value,
+    date:journalDate.value,
     concept:covered.value,
     journalEntry: journal.value,
     moodInput:mood.value
