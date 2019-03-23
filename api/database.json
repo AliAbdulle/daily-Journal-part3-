@@ -20,6 +20,20 @@
       "journalEntry": "It cool thing to do because it easy go back and deleted.",
       "dailyMood": "Happy",
       "id": 3
+    },
+    {
+      "date": "2019-03-13",
+      "concept": "Make",
+      "journalEntry": "Looking",
+      "moodInput": "Ok",
+      "id": 4
+    },
+    {
+      "date": "2019-03-13",
+      "concept": "java",
+      "journalEntry": "Finished",
+      "moodInput": "Happy",
+      "id": 5
     }
   ]
 }

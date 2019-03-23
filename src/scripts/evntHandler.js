@@ -4,7 +4,7 @@ recordEntry.addEventListener("click", () =>{
     date:journalData.value,
     concept:covered.value,
     journalEntry: journal.value,
-    dailyMood:mood.value
+    moodInput:mood.value
     }
     console.log(journalEntries)
  api.getPostdata(journalEntries)

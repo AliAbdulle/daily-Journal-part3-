@@ -1,26 +1,32 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     background-color: lightgrey;
     border: 1px solid black;
     padding: 1px;
 }
-#covered{
+
+#covered {
     width: 250px;
 }
-#journal{
+
+#journal {
     width: 250px;
     height: 140px;
+    te
+}
 
+#record-entry {
+    background-color: lightseagreen;
+    border: 2px solid black;
+    width: 150px
 }
-#record-entry{
-   background-color: lightseagreen;
-   border: 2px solid black;
-   width: 150px
-}
-h1{
+
+h1 {
     display: flex;
     justify-content: center;
     text-align: center;
     color: blue;
 }
+
+#journalData {}

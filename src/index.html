@@ -1,50 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    <head>
     <meta charset="UTF-8">
     <title>Daily-journal Entry</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/main.css">
-</head>
 
-<body>
-        <h1>Daily Journal Entry</h1>
-    <form action="">
-        <!--data Entery ifeld-->
-        <fieldset>
-            <label for="journalData">Date Entry:</label>
-            <input type="date" name="journalData" id="journalData"></input>
-        </fieldset>
-        <!--Concepts covered-->
-        <fieldset>
-            <label for="Concepts covered">Concepts covered</label><br>
-            <input type="text" name="Concepts covered" id="covered">
-
-        </fieldset>
-        <!--comment entery of the blog-->
-        <fieldset>
-            <label for="journalEntery">Journal Entery</label><br>
-            <textarea type="text" name="" id="journal"></textarea>
-        </fieldset>
-        <!--Logical function of the idea-->
-        <fieldset>
-            <label for="modOfThe day">Mood of the day</label><br>
-            <select name="mood" id="mood">
-                <option value="Okay">Okay</option>
-                <option value="Sad">Sad</option>
-                <option value="Happy">Happy</option>
-            </select>
-        </fieldset>
-        <!--Submit button-->
-        <article class="entryLog">
-        </article>
-    </form>
+<head>
+  <article id="display-container"></article>
+  <article id="output"></article>
 
     <button id="record-entry">Record Journal Entry</button>
     <script src="scripts/evntHandler.js"></script>
     <script src="scripts/apiManager.js"></script>
+    <script src="scripts/domManager.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
