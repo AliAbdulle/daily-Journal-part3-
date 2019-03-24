@@ -20,27 +20,6 @@
       "journal": "It cool thing to do because it easy go back and deleted.",
       "mood": "Happy",
       "id": 3
-    },
-    {
-      "date": "2019-03-14",
-      "concept": "Object",
-      "journal": "Have you",
-      "mood": "Happy",
-      "id": 4
-    },
-    {
-      "date": "2019-03-25",
-      "concept": "Update Dom",
-      "journal": "We have been update",
-      "mood": "Ok",
-      "id": 5
-    },
-    {
-      "date": "2019-03-31",
-      "concept": "Crazy Concepys",
-      "journal": "This is a test of the e,mergency concept system.",
-      "mood": "Sad",
-      "id": 6
     }
   ]
 }
