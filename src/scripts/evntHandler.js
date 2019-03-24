@@ -1,11 +1,13 @@
-const recordEntry = document.getElementById("record-entry")
-recordEntry.addEventListener("click", () =>{
+recordButton.addEventListener("click", () => {
+    console.log("string")
     let journalEntries = {
-    date:journalDate.value,
-    concept:covered.value,
-    journalEntry: journal.value,
-    moodInput:mood.value
+        date:journalDate.value,
+        concept:covered.value,
+        journal: messageInput.value,
+        mood:moodInput.value
     }
-    console.log(journalEntries)
- api.getPostdata(journalEntries)
+ api.getPostdata(journalEntries).then(allOutputs.appendDom)
+ console.log("string")
+
 })
+

@@ -6,7 +6,7 @@ title.textContent = "Welcome to Ali Abdulle Daily Journal Entry";
 header.appendChild(title)
 display.appendChild(header)
 
-//Date Entery 
+//Date Entery
 const date = document.createElement("fieldset")
 display.appendChild(date)
 const dateLabel =document.createElement("h4")
@@ -14,7 +14,6 @@ dateLabel.textContent = "Journal Date Entry:"
 const journalData = document.createElement("input")
 journalData.id ="journalDate"
 journalData.setAttribute("type", "date")
-
 
 date.appendChild(dateLabel)
 date.appendChild(journalData)
@@ -35,7 +34,6 @@ const messageLabel =document.createElement("h4")
 messageLabel.textContent = "Journal Message:"
 const messageInput = document.createElement("input")
 messageInput.id ="journal"
-
 
 textField.appendChild(messageLabel)
 textField.appendChild(messageInput)
@@ -61,4 +59,3 @@ const recordButton = document.createElement("button")
 recordButton.id = "record-entry"
 recordButton.textContent = "Record Journal Entry"
 display.appendChild(recordButton)
-recordButton.addEventListener("click", recordButton)
