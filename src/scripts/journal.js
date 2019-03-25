@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const journalEnteries = document.querySelector(".enterylog")
 
 const makeJournalEntryComponent = (journalEntery) => {
@@ -22,3 +23,5 @@ fetch("http://localhost:3000/entries")
         }
         console.log(parsedResponse)
     })
+=======
+>>>>>>> 2febfab9a18ce889b737df0bf35f3172d3b0aee7
