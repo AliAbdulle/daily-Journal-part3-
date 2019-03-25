@@ -6,7 +6,7 @@ title.textContent = "Welcome to Ali Abdulle Daily Journal Entry";
 header.appendChild(title)
 display.appendChild(header)
 
-//Date Entery
+//Date Entry
 const date = document.createElement("fieldset")
 display.appendChild(date)
 const dateLabel =document.createElement("h4")
@@ -18,6 +18,7 @@ journalData.setAttribute("type", "date")
 date.appendChild(dateLabel)
 date.appendChild(journalData)
 
+//Concept
 const concepts = document.createElement("fieldset")
 display.appendChild(concepts)
 const conceptsLabel =document.createElement("h4")
@@ -28,16 +29,18 @@ conceptsCovered.id ="covered"
 concepts.appendChild(conceptsLabel)
 concepts.appendChild(conceptsCovered)
 
+//Journal Entry
 const textField = document.createElement("fieldset")
 display.appendChild(textField)
 const messageLabel =document.createElement("h4")
-messageLabel.textContent = "Journal Message:"
+messageLabel.textContent = "Daily Journal:"
 const messageInput = document.createElement("input")
 messageInput.id ="journal"
 
 textField.appendChild(messageLabel)
 textField.appendChild(messageInput)
 
+//Feeling Mood
 const moodOtion = ["Ok", "Sad", "Happy"]
 const moodField = document.createElement("fieldset")
 display.appendChild(moodField)
@@ -55,6 +58,7 @@ moodOtion.forEach(mood => {
 moodField.appendChild(moodLabel)
 moodField.appendChild(moodInput)
 
+//Button Record
 const recordButton = document.createElement("button")
 recordButton.id = "record-entry"
 recordButton.textContent = "Record Journal Entry"
