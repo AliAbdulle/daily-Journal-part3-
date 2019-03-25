@@ -5,13 +5,11 @@ const makeJournalEntryComponent = (journalEntery) => {
     const covered = document.querySelector("#covered").value;
     const journal = document.querySelector("#journal").value;
     const journalData = document.querySelector("#journalData").value;
-    
     // Create your own HTML structure for a journal entry
     journalEntery.innerHTML += `
     <h3>${covered}</h3>
     <p>${journal}</p>
     <h2>${journalData}</h2>
-    
      `
 }
 
