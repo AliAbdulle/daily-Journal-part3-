@@ -1,20 +1,25 @@
 {
-    "entries":[
+  "entries": [
     {
-    "date": "07/24/2018",
-    "covered": "Array methods",
-    "journal": "We learned about array methods, but only forEach made sense",
-    "mood": "Ok"
-},
-
-
-
-{
-    "date": "07/292018",
-    "covered": "objects ",
-    "journal": "We learned about new json entery field, and to fetch the get and respone to js",
-    "mood": "Ok"
+      "date": "02/27/2019",
+      "concept": "javaScript array ",
+      "journal": "I like loop throght all object",
+      "mood": "good",
+      "id": 1
+    },
+    {
+      "date": "07/24/2018",
+      "concept": "Array methods",
+      "journal": "We learned about array methods, but only forEach made sense",
+      "mood": "Ok",
+      "id": 2
+    },
+    {
+      "date": "2019-03-21",
+      "concept": "Learning how to delete objects ",
+      "journal": "It cool thing to do because it easy go back and deleted.",
+      "mood": "Happy",
+      "id": 3
     }
-
-]
+  ]
 }

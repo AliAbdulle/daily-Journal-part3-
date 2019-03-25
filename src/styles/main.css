@@ -1,20 +1,41 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     background-color: lightgrey;
     border: 1px solid black;
     padding: 1px;
 }
-#covered{
+#journalDate{
     width: 250px;
+    height: 20px;
 }
-#journal{
+
+#covered {
+    width: 250px;
+    height: 20px;
+}
+
+#journal {
     width: 250px;
     height: 140px;
 
+
 }
-#record-entry{
-   background-color: lightseagreen;
-   border: 2px solid black;
-   width: 150px
+#mood{
+    width: 60px;
+    height: 20px;
 }
+
+#record-entry {
+    background-color: lightseagreen;
+    border: 2px solid black;
+    width: 250px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
