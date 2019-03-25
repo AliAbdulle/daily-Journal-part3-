@@ -1,11 +1,15 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
+    background-color: lightgray;
     border: 1px solid black;
     padding: 1px;
 }
 #journalDate{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
     width: 250px;
     height: 20px;
 }
@@ -18,8 +22,6 @@ body {
 #journal {
     width: 250px;
     height: 140px;
-
-
 }
 #mood{
     width: 60px;
@@ -29,7 +31,7 @@ body {
 #record-entry {
     background-color: lightseagreen;
     border: 2px solid black;
-    width: 250px;
+    width: 150px;
 }
 
 h1 {
