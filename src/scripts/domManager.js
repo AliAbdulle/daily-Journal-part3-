@@ -11,12 +11,12 @@ const date = document.createElement("fieldset")
 display.appendChild(date)
 const dateLabel =document.createElement("h4")
 dateLabel.textContent = "Journal Date Entry:"
-const journalData = document.createElement("input")
+const journalDate = document.createElement("input")
 journalData.id ="journalDate"
-journalData.setAttribute("type", "date")
+date.setAttribute("type", "date")
 
 date.appendChild(dateLabel)
-date.appendChild(journalData)
+date.appendChild(journalDate)
 
 //Concept
 const concepts = document.createElement("fieldset")
