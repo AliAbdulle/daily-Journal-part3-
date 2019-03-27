@@ -65,8 +65,3 @@ recordButton.id = "record-entry"
 recordButton.textContent = "Record Journal Entry"
 display.appendChild(recordButton)
 
-const clearElemet = domElement => {
-    while(domElement.firstChild) {
-        return domElement.removeChild(domElement.firstChild)
-    }
-}
