@@ -53,13 +53,20 @@ moodOtion.forEach(mood => {
     moodOption.setAttribute = ("value", mood)
     moodOption.textContent = mood
     moodInput.appendChild(moodOption)
+
+    moodField.appendChild(moodLabel)
+    moodField.appendChild(moodInput)
 })
 
-moodField.appendChild(moodLabel)
-moodField.appendChild(moodInput)
 
 //Button Record
 const recordButton = document.createElement("button")
 recordButton.id = "record-entry"
 recordButton.textContent = "Record Journal Entry"
 display.appendChild(recordButton)
+
+const clearElemet = domElement => {
+    while(domElement.firstChild) {
+        return domElement.removeChild(domElement.firstChild)
+    }
+}
