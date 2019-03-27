@@ -9,11 +9,11 @@ display.appendChild(header)
 //Date Entry
 const date = document.createElement("fieldset")
 display.appendChild(date)
-const dateLabel =document.createElement("h4")
+const dateLabel =document.createElement("label")
 dateLabel.textContent = "Journal Date Entry:"
 const journalDate = document.createElement("input")
-journalData.id ="journalDate"
-date.setAttribute("type", "date")
+journalDate.id ="journalDate"
+journalDate.setAttribute("type", "date")
 
 date.appendChild(dateLabel)
 date.appendChild(journalDate)

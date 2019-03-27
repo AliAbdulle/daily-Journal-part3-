@@ -6,9 +6,6 @@ body {
     padding: 1px;
 }
 #journalDate{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     text-align: left;
     width: 250px;
     height: 20px;
