@@ -9,11 +9,11 @@ display.appendChild(header)
 //Date Entry
 const date = document.createElement("fieldset")
 display.appendChild(date)
-const dateLabel =document.createElement("h4")
+const dateLabel =document.createElement("label")
 dateLabel.textContent = "Journal Date Entry:"
 const journalDate = document.createElement("input")
-journalData.id ="journalDate"
-date.setAttribute("type", "date")
+journalDate.id ="journalDate"
+journalDate.setAttribute("type", "date")
 
 date.appendChild(dateLabel)
 date.appendChild(journalDate)
@@ -21,10 +21,10 @@ date.appendChild(journalDate)
 //Concept
 const concepts = document.createElement("fieldset")
 display.appendChild(concepts)
-const conceptsLabel =document.createElement("h4")
+const conceptsLabel = document.createElement("h4")
 conceptsLabel.textContent = "Concepts Covered:"
 const conceptsCovered = document.createElement("input")
-conceptsCovered.id ="covered"
+conceptsCovered.id = "covered"
 
 concepts.appendChild(conceptsLabel)
 concepts.appendChild(conceptsCovered)
@@ -32,10 +32,10 @@ concepts.appendChild(conceptsCovered)
 //Journal Entry
 const textField = document.createElement("fieldset")
 display.appendChild(textField)
-const messageLabel =document.createElement("h4")
+const messageLabel = document.createElement("h4")
 messageLabel.textContent = "Daily Journal:"
 const messageInput = document.createElement("input")
-messageInput.id ="journal"
+messageInput.id = "journal"
 
 textField.appendChild(messageLabel)
 textField.appendChild(messageInput)
@@ -44,7 +44,7 @@ textField.appendChild(messageInput)
 const moodOtion = ["Ok", "Sad", "Happy"]
 const moodField = document.createElement("fieldset")
 display.appendChild(moodField)
-const moodLabel =document.createElement("h4")
+const moodLabel = document.createElement("h4")
 moodLabel.textContent = "Mood of the Day:"
 const moodInput = document.createElement("Select")
 moodInput.id = "mood"
@@ -53,13 +53,15 @@ moodOtion.forEach(mood => {
     moodOption.setAttribute = ("value", mood)
     moodOption.textContent = mood
     moodInput.appendChild(moodOption)
+
+    moodField.appendChild(moodLabel)
+    moodField.appendChild(moodInput)
 })
 
-moodField.appendChild(moodLabel)
-moodField.appendChild(moodInput)
 
 //Button Record
 const recordButton = document.createElement("button")
 recordButton.id = "record-entry"
 recordButton.textContent = "Record Journal Entry"
 display.appendChild(recordButton)
+

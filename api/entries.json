@@ -27,6 +27,13 @@
       "journal": "Learn how to update HTMl form with existing text and changing into new text input",
       "mood": "Happy",
       "id": 4
+    },
+    {
+      "date": "2019-03-31",
+      "concept": "Learning Fetch API",
+      "journal": "Looks amazing to get the concept of fetching data and output on the DOM. ",
+      "mood": "Happy",
+      "id": 5
     }
   ]
 }
